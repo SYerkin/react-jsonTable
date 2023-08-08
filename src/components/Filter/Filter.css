@@ -1,0 +1,76 @@
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter-show {
+  background-color: transparent;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+.filter-show.visible {
+  display: block;
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.filter-fields {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+  row-gap: 10px;
+  margin-top: 10px;
+}
+
+.filter-field {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.filter-field span {
+  margin-right: 5px;
+}
+
+.filter-field input {
+  width: 100%;
+}
+
+.apply-filter-container {
+  margin-top: 10px;
+}
+
+.apply-filter-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.reset-filter-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.reset-filter-button {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  color: #007bff;
+}

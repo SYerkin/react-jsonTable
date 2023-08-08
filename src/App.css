@@ -1,38 +1,111 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-container {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  width: 70%;
+  margin-right: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-container input {
+  width: 97.5%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.fetch-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  table-layout: auto;
+  max-width: 400px;
+}
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+table th {
+  width: auto;
+  min-width: 150px;
+}
+
+table td {
+  width: auto;
+  min-width: 150px;
+}
+
+.center-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ddd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.table-container {
+  margin-top: 20px;
+}
+.fixed-header-table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-top: 20px;
+  table-layout: fixed;
+}
+
+.fixed-header-table th,
+.fixed-header-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fixed-header-table th {
+  background-color: #f0f0f0;
+  text-align: left;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
